@@ -57,4 +57,28 @@ It follows REST principles, uses JSON for data exchange, and is backed by an H2 
 
 ---
 
-## 📂 Project Structure
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 17+
+- Maven 3.8+
+- Git
+
+## 🛠️ curl tests (execute in terminal)
+  ```bash
+     Invoke-RestMethod -Method Post -Uri "http://localhost:8080/api/tasks" `  
+     -ContentType "application/json" `
+     -Body '{"title":"Learn Spring Boot","description":"Build a REST API"}'
+
+Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks"    
+
+Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks/1"  
+
+Invoke-RestMethod -Method Put -Uri "http://localhost:8080/api/tasks/1" ` 
+>>   -ContentType "application/json" `
+>>   -Body '{"title":"Updated Title","description":"Updated"}'
+
+Invoke-RestMethod -Method Delete -Uri "http://localhost:8080/api/tasks/1"
+
+
+
