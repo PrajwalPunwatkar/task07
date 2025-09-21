@@ -65,12 +65,18 @@ It follows REST principles, uses JSON for data exchange, and is backed by an H2 
 - Git
 
 ## 🛠️ curl tests (execute in terminal)
+
+1. Create a task
   ```bash
      Invoke-RestMethod -Method Post -Uri "http://localhost:8080/api/tasks" `  
      -ContentType "application/json" `
      -Body '{"title":"Learn Spring Boot","description":"Build a REST API"}'
 
-Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks"    
+2. List all tasks
+
+Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks"
+
+list one task
 
 Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks/1"  
 
