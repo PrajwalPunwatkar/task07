@@ -1,0 +1,60 @@
+# 📝 Task Management REST API
+
+A complete Spring Boot REST API for managing tasks, built to demonstrate clean architecture, CRUD operations, JSON data exchange, and in‑memory persistence with H2.  
+This project is perfect for learning backend development, showcasing portfolio work, or serving as a starter template for larger applications.
+
+---
+
+## 📖 Table of Contents
+1. [About the Project](#about-the-project)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Project Structure](#project-structure)
+5. [Getting Started](#getting-started)
+6. [Configuration](#configuration)
+7. [API Endpoints](#api-endpoints)
+8. [Example Requests](#example-requests)
+9. [Testing](#testing)
+10. [Screenshots](#screenshots)
+11. [Future Improvements](#future-improvements)
+12. [License](#license)
+
+---
+
+## 📌 About the Project
+
+This API allows you to **create, read, update, and delete tasks** via HTTP requests.  
+It follows REST principles, uses JSON for data exchange, and is backed by an H2 in‑memory database for quick setup and testing.
+
+**Why I built it:**
+- To practice building robust, well‑documented REST APIs in Java/Spring Boot.
+- To demonstrate clean layering: Controller → Service → Repository.
+- To provide a reproducible, easy‑to‑run backend project for others to learn from.
+
+---
+
+## ✨ Features
+
+- **CRUD Operations**: Create, Read, Update, Delete tasks.
+- **JSON API**: Request and response bodies in JSON format.
+- **In‑Memory Database**: H2 for zero‑config persistence during development.
+- **Layered Architecture**: Separation of concerns for maintainability.
+- **Testable**: Works with curl, Postman, or any HTTP client.
+- **H2 Console**: Web UI to inspect and query the database.
+
+---
+
+## 🛠 Tech Stack
+
+- **Language**: Java 17
+- **Framework**: Spring Boot 3.x
+- **Dependencies**:
+  - Spring Web
+  - Spring Data JPA
+  - H2 Database
+- **Build Tool**: Maven
+- **Testing Tools**: curl, Postman
+
+---
+
+## 📂 Project Structure
