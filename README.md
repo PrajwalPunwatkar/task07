@@ -77,18 +77,18 @@ It follows REST principles, uses JSON for data exchange, and is backed by an H2 
     Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks"
 
 3. List one task
-  ```bash
-  Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks/1"
+    ```bash
+    Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks/1"
 
 4. Update task
-  ```bash
-  Invoke-RestMethod -Method Put -Uri "http://localhost:8080/api/tasks/1" ` 
-  >>   -ContentType "application/json" `
-  >>   -Body '{"title":"Updated Title","description":"Updated"}'
+    ```bash
+    Invoke-RestMethod -Method Put -Uri "http://localhost:8080/api/tasks/1" ` 
+    -ContentType "application/json" `
+    -Body '{"title":"Updated Title","description":"Updated"}'
 
 5. Delete all tasks
-  ```bash
-  Invoke-RestMethod -Method Delete -Uri "http://localhost:8080/api/tasks"
+    ```bash
+    Invoke-RestMethod -Method Delete -Uri "http://localhost:8080/api/tasks"
 
 
 
