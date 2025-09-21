@@ -68,23 +68,27 @@ It follows REST principles, uses JSON for data exchange, and is backed by an H2 
 
 1. Create a task
   ```bash
-     Invoke-RestMethod -Method Post -Uri "http://localhost:8080/api/tasks" `  
-     -ContentType "application/json" `
-     -Body '{"title":"Learn Spring Boot","description":"Build a REST API"}'
+  Invoke-RestMethod -Method Post -Uri "http://localhost:8080/api/tasks" `  
+  -ContentType "application/json" `
+  -Body '{"title":"Learn Spring Boot","description":"Build a REST API"}'
 
 2. List all tasks
+  ```bash
+  Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks"
 
-Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks"
+3. List one task
+  ```bash
+  Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks/1"
 
-list one task
+4. Update task
+  ```bash
+  Invoke-RestMethod -Method Put -Uri "http://localhost:8080/api/tasks/1" ` 
+  >>   -ContentType "application/json" `
+  >>   -Body '{"title":"Updated Title","description":"Updated"}'
 
-Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/tasks/1"  
-
-Invoke-RestMethod -Method Put -Uri "http://localhost:8080/api/tasks/1" ` 
->>   -ContentType "application/json" `
->>   -Body '{"title":"Updated Title","description":"Updated"}'
-
-Invoke-RestMethod -Method Delete -Uri "http://localhost:8080/api/tasks/1"
+5. Delete all tasks
+  ```bash
+  Invoke-RestMethod -Method Delete -Uri "http://localhost:8080/api/tasks"
 
 
 
