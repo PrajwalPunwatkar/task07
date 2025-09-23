@@ -6,18 +6,14 @@ This project is perfect for learning backend development, showcasing portfolio w
 ---
 
 ## 📖 Table of Contents
-1. [About the Project](#about-the-project)
-2. [Features](#features)
-3. [Tech Stack](#tech-stack)
-4. [Project Structure](#project-structure)
-5. [Getting Started](#getting-started)
-6. [Configuration](#configuration)
-7. [API Endpoints](#api-endpoints)
-8. [Example Requests](#example-requests)
-9. [Testing](#testing)
-10. [Screenshots](#screenshots)
-11. [Future Improvements](#future-improvements)
-12. [License](#license)
+- About the Project
+- Features
+- Tech Stack
+- Project Structure
+- Getting Started
+- Testing
+- Running Unit Tests
+- Test Coverage
 
 ---
 
@@ -89,6 +85,18 @@ It follows REST principles, uses JSON for data exchange, and is backed by an H2 
 5. Delete all tasks
     ```bash
     Invoke-RestMethod -Method Delete -Uri "http://localhost:8080/api/tasks"
+    
+## 🧪 Testing
+  
+  ### Running Unit Tests
+ To run the test suite:
+      ```bash
+      mvn test
 
-
+  ### Test Coverage
+  A JaCoCo coverage report is generated automatically after tests. To view:
+      ```bash
+      mvn jacoco:report
+      
+  Open target/site/jacoco/index.html in your browser to inspect coverage metrics and ensure critical branches are covered.
 
